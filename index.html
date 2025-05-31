@@ -309,28 +309,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-    <script>
-        const form = document.querySelector(".contact-form");
-
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault(); // Prevent default form submission
-            const formData = new FormData(form);
-
-            // Send data using fetch
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: formData,
-                headers: { Accept: "application/json" },
-            });
-
-            if (response.ok) {
-                alert("Message sent successfully!");
-                form.reset(); // ✅ This clears the form
-            } else {
-                alert("There was an error. Please try again.");
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </body>
