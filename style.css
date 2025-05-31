@@ -26,13 +26,16 @@ body{
     background-color: var(--background);
 }
 
-.head{
+nav {
     margin: 10px 20px;
     /* border: 2px solid black; */
     font-family:var(--font-family);
     font-weight: 700;
 }
 
+.right{
+  justify-content: right;
+}
 ul{
     gap: 36px;
     justify-content: right;
